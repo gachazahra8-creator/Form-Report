@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Report a Lost or Found Item</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f5fa;
+            margin: 0;
+            color: #252b45;
+        }
+
+        header {
+            background-color: white;
+            padding: 15px 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header h2 {
+            display: inline;
+        }
+
+        nav {
+            float: right;
+            margin-top: 5px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #252b45;
+            margin-left: 20px;
+        }
+
+        .container {
+            width: 85%;
+            margin: 40px auto;
+        }
+
+        .form-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #e5e5e5;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        p {
+            color: #777;
+        }
+
+        label {
+            display: block;
+            margin-top: 18px;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+        }
+
+        .row {
+            display: flex;
+            gap: 20px;
+        }
+
+        .field {
+            flex: 1;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 13px 20px;
+            background-color: #6269d1;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+        button:hover {
+            background-color: #4d54b5;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>Lose & Found Campus</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="report.html">Report an Item</a>
+            <a href="lost.html">Lost Items</a>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <h1>Lost something on campus?</h1>
+
+        <p>
+            Post a photo, share the details, and help your campus
+            community reunite with lost belongings.
+        </p>
+
+        <br>
+
+        <div class="form-box">
+
+            <h2>Report a Lost or Found Item</h2>
+
+            <p>Fill in the details below to create a post.</p>
+
+            <form>
+
+                <label>Upload Item Photo</label>
+                <input type="file" accept="image/*">
+
+                <div class="row">
+
+                    <div class="field">
+                        <label>Item Name</label>
+                        <input type="text"
+                               placeholder="e.g. Black Wallet"
+                               required>
+                    </div>
+
+                    <div class="field">
+                        <label>Location</label>
+                        <input type="text"
+                               placeholder="e.g. Library"
+                               required>
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <div class="field">
+                        <label>Date Lost or Found</label>
+                        <input type="date" required>
+                    </div>
+
+                    <div class="field">
+                        <label>Post Type</label>
+                        <select required>
+                            <option value="">Choose an option</option>
+                            <option>Lost Item</option>
+                            <option>Found Item</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <label>Caption / Description</label>
+                <textarea rows="5"
+                          placeholder="Describe your lost or found item..."
+                          required></textarea>
+
+                <button type="submit">+ Publish Post</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
